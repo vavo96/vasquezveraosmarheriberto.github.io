@@ -1,0 +1,42 @@
+
+body{
+    /*background-image: url(../imagenes/gato.jpg);*/
+    background-color: rgba(29, 26, 26, 0.979);
+}
+h1{
+    color: #1c5c9c;
+}
+.semblanza{
+    font-size: 20px;
+    color: #01bfa6;
+}
+.titulo{
+    color: yellow;
+}
+.columna-derecha{
+    margin: 2%;
+    float: right;
+    width: 75%; 
+}
+.columna_izquiera{
+    float: left;
+    width: 22%;
+}
+.imagen_principal{
+    height: 450px;
+    width: 400px;
+    float: right;
+}
+.cuervo{
+    height: 300px;
+    width: 200px;
+}
+ul,li, a{
+    color: #B3B3D7;
+    font-size: 18px;
+}
+p{
+    padding-left: 3px;
+    color: #01bfa6;
+    text-align: justify;
+}

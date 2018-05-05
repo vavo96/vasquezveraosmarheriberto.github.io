@@ -1,0 +1,82 @@
+body{
+    background-image: url("../imagenes/fondo.jpg");
+};
+.columna_izquiera{
+    float: left;
+}
+h1{
+    color: rgb(121, 156, 137);
+    font-size: 30px;
+}
+li{
+    color: rgb(195, 212, 210);
+}
+a{
+    color: rgb(126, 192, 204);
+    font-size: 25px;
+}
+p{
+    text-align: justify;
+}
+.cabecera{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 40px;
+    width: auto;
+    height: 250px; 
+  }
+.imagen{
+    width: 850px;
+    height: 300px;
+    float: left;
+}
+.cuento{
+    width: 60%;
+    height: 380px;
+    background-color: rgb(9, 1, 12);
+    margin-top: 100px;
+    margin-left: 1%;
+    overflow: scroll;
+    border-radius: 2%;
+    color: aqua;
+  }
+
+.cuervo{
+    height: 300px;
+    width: 200px; 
+ 
+}
+
+.columna_derecha{
+    float: right;
+    width: 35%; 
+    height: 600px;
+}
+.tit1{
+    font-size: 50px;
+    font-family: 'Helvetica';
+    color: rgb(92, 8, 26);
+    float: left;
+    margin: 0px;
+    margin-top: 10px;
+    width: 600px;
+}
+.topinion{
+    font-size: 50px;
+    font-family: 'Lucida Sans';
+    color: rgb(153, 56, 70);
+    float: left;
+    margin: 0px;
+    margin-top: 10px;
+    width: 200px;
+}
+.opinion{
+    width: 60%;
+    height: 200px;
+    background-color: rgb(11, 5, 37);
+    margin-top: 100px;
+    margin-left: 1%;
+    overflow: scroll;
+    border-radius: 2%;
+    color: rgb(15, 182, 154);
+}

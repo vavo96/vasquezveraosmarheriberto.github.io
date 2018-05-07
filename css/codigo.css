@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(255, 243, 203);
+}
+.cabecera{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    height: 280px; 
+}
+.tit1{
+    margin-top: 2px;
+    margin-right: 200px;
+    float: right;
+    font-size: 80px;
+    font-family: 'Times New Roman';
+    text-align: center;
+    height: 40px;
+    color: rgb(128, 63, 25);
+}
+.poe{
+    margin-left: 12px;
+    margin-right: 10px;
+    width: 1300px;
+    height: 250px;
+    float: left;
+}
+.contenido{
+    text-align: justify;
+    height: 400px;
+    width: 70%;
+    border-radius: 2%;
+    float: right;
+    margin-right: 20px;
+    color: rgb(110, 90, 35);
+}
+.tit-izq{
+    width: 80px;
+}
+.columna_izquierda{
+    float: left;
+    width: 25%;
+    
+}
+.contenedor{
+   overflow: hidden;
+}
+a{
+    font-size: 20px;
+    color: rgb(136, 127, 50);
+}

@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(51, 10, 10);
+}
+.cabecera{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: auto;
+    height: 250px; 
+  }
+
+.imagen{
+    width: 98%;
+    height: 300px;
+    float: left;
+}
+.cuento{
+    width: 98%;
+    height: 380px;
+    background-color: rgb(126, 20, 17);
+    margin-top: 130px;
+    margin-left: 1%;
+    overflow: scroll;
+    border-radius: 2%;
+    color: rgba(184, 226, 228, 0.938);
+    text-align: justify;
+  }
+  p{
+      margin-left: 3px;
+      margin-right: 3px;
+  }
+  .izquierda{
+    width: 8%;
+    height: 8%;
+    margin-left: 35%; 
+  }
+  .inicio{
+    width: 8%;
+    height: 8%;
+    margin-left: 3%;
+  }
+  .derecha{
+      width: 8%;
+      height: 8%;
+      float: right;
+      margin-right: 30%;
+  }
+  .tit1{
+      font-size: 50px;
+      color: white;
+  }
+  .titglosario{
+          font-size: 70px;
+          color: rgb(148, 155, 46);
+  }
+  .glosario{
+    width: 98%;
+    height: 380px;
+    background-color: rgb(63, 16, 16);
+    margin-top: 30px;
+    margin-left: 1%;
+    overflow: scroll;
+    border-radius: 2%;
+    color: rgba(147, 189, 187, 0.938);
+    text-align: justify;   
+  }
+  .topinion{
+      margin-top: 3px;
+    font-size: 40px;
+    color: rgb(90, 207, 197);
+  }
+  .opinion{
+    width: 98%;
+    height: 250px;
+    background-color: rgb(145, 66, 66);
+    margin-top: 30px;
+    margin-left: 1%;
+    border-radius: 2%;
+    overflow: scroll;
+    color: rgba(65, 158, 138, 0.938);
+    text-align: justify; 
+  }
+  .siguientes{
+    overflow: hidden;
+  }

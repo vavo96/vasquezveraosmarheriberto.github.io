@@ -1,11 +1,11 @@
 body{
-    background-color: rgb(241, 155, 25);
+    background-color: rgb(243, 146, 0);
 }
 .cabecera{
     margin-top: 10px;
     margin-left: 10px;
     width: auto;
-    height: 250px; 
+    height: 300px; 
   }
 
 .imagen{
@@ -46,7 +46,7 @@ body{
   }
   .tit1{
       font-size: 50px;
-      color: yellow;
+      color: rgb(66, 66, 2);
   }
   .titglosario{
           font-size: 70px;
@@ -61,11 +61,11 @@ body{
     overflow: scroll;
     border-radius: 2%;
     color: rgba(43, 15, 15, 0.938);
-    text-align: justify;   
+    text-align: center;   
   }
   .topinion{
       margin-top: 3px;
-    font-size: 40px;
+    font-size: 90%;
     color: rgb(220, 110, 20);
   }
   .opinion{
@@ -82,3 +82,13 @@ body{
   .siguientes{
     overflow: hidden;
   }
+
+  .ctit{
+    color: rgb(205, 218, 31);
+    font-size: 30px;
+  }
+
+strong{
+  color: black;
+  font-size: 120%;
+}

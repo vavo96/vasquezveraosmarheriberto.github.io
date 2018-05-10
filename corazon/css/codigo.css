@@ -51,16 +51,16 @@ body{
     width: 98%;
     height: 380px;
     background-color: rgb(9, 1, 12);
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 1%;
     overflow: scroll;
     border-radius: 2%;
     color: rgba(228, 124, 83, 0.938);
-    text-align: justify;   
+    text-align: center;   
   }
   .topinion{
       margin-top: 3px;
-    font-size: 40px;
+    font-size: 85%;
     color: crimson;
   }
   .opinion{
@@ -77,3 +77,12 @@ body{
   .siguientes{
     overflow: hidden;
   }
+  .ctit{
+    color: white;
+    font-size: 25px;
+  }
+
+strong{
+  color: white;
+  font-size: 120%;
+}

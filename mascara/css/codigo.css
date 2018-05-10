@@ -5,7 +5,7 @@ body{
     margin-top: 10px;
     margin-left: 10px;
     width: auto;
-    height: 250px; 
+    height: 300px; 
   }
 
 .imagen{
@@ -61,11 +61,11 @@ body{
     overflow: scroll;
     border-radius: 2%;
     color: rgba(147, 189, 187, 0.938);
-    text-align: justify;   
+    text-align: center;   
   }
   .topinion{
       margin-top: 3px;
-    font-size: 40px;
+    font-size: 90%;
     color: rgb(90, 207, 197);
   }
   .opinion{
@@ -76,9 +76,19 @@ body{
     margin-left: 1%;
     border-radius: 2%;
     overflow: scroll;
-    color: rgba(65, 158, 138, 0.938);
+    color: rgba(17, 37, 33, 0.938);
     text-align: justify; 
   }
   .siguientes{
     overflow: hidden;
   }
+
+  .ctit{
+    color: rgb(55, 128, 128);
+    font-size: 30px;
+  }
+
+strong{
+  color: black;
+  font-size: 120%;
+}

@@ -5,7 +5,7 @@ body{
   margin-top: 10px;
   margin-left: 10px;
   width: auto;
-  height: 250px; 
+  height: 300px; 
 }
 
 .imagen{
@@ -55,28 +55,28 @@ p{
 .glosario{
   width: 98%;
   height: 380px;
-  background-color: rgb(41, 73, 60);
+  background-color: rgb(165, 165, 165);
   margin-top: 30px;
   margin-left: 1%;
   overflow: scroll;
   border-radius: 2%;
-  color: rgba(147, 189, 187, 0.938);
-  text-align: justify;   
+  color: rgba(0, 0, 0, 0.938);
+  text-align: center;   
 }
 .topinion{
     margin-top: 3px;
-  font-size: 40px;
-  color: rgb(207, 90, 114);
+  font-size: 90%;
+  color: rgb(49, 46, 47);
 }
 .opinion{
   width: 98%;
   height: 250px;
-  background-color: rgb(88, 71, 94);
+  background-color: rgb(140, 138, 141);
   margin-top: 30px;
   margin-left: 1%;
   border-radius: 2%;
   overflow: scroll;
-  color: rgba(209, 116, 79, 0.938);
+  color: rgba(31, 27, 25, 0.938);
   text-align: justify; 
 }
 .siguientes{

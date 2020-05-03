@@ -1,0 +1,11 @@
+  <div [ngStyle]="{'background': config.fondo}">
+    <h1>Cursillo angular</h1>
+    <button (click)="ocultarVideojuegos(false)">Ocultar Videojuegos</button>
+    <button (click)="ocultarVideojuegos(true)">Mostrar Videojuegos</button>
+
+    <videojuego *ngIf="mostrarVideojuegos"></videojuego>
+    <zapatilla></zapatilla>
+    <app-curso></app-curso>
+  </div>
+  <!-- Resources -->
+

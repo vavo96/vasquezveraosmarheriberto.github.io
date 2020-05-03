@@ -1,0 +1,21 @@
+<h2>{{ titulo }}</h2>
+<p>Añadir marcas</p>
+<p>
+  <input type="text" [(ngModel)]="mi_marca">
+</p>
+<p>{{ mi_marca }}</p>
+
+
+<p>Compra las zapatillas de las mejores marcas</p>
+<ul>
+  <li *ngFor="let marca of marcas">{{ marca }}</li>
+</ul>
+<p>Las zapatillas deportivas disponibles son las siguientes</p>
+<ul>
+  <li *ngFor="let tennis of zapatillas">
+    <div *ngIf="tennis.stock">
+      {{ tennis.nombre }} - <strong>{{ tennis.precio }}</strong>
+      <span *ngIf="tennis.precio < 800" [style.background]="'red'"> ¡¡Oferton!!</span>
+    </div>
+  </li>
+</ul>

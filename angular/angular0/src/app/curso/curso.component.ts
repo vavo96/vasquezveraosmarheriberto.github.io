@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router,ActivatedRoute,Params } from '@angular/router'
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-curso',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursoComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _route: ActivatedRoute,
+    private _router: Router
+  ) { }
 
   ngOnInit(): void {
+    this._route.params.subscribe((params: Params) => {
+      console.log(params);
+    });
   }
 
 }

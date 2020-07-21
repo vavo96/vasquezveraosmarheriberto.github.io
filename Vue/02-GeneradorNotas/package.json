@@ -1,8 +1,8 @@
 {
-  "name": "03-generador-notas",
+  "name": "02-generador-notas",
   "description": "A Vue.js project",
   "version": "1.0.0",
-  "author": "Vasquez Vera Osmar Heriberto <ing.osmarvera@gmail.com>",
+  "author": "Grover <grovervasquez@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {

@@ -1,22 +1,30 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+    <h3>{{ titulo }}</h3>
+    <div class="form">
+      <div class="form-group">
+        <label>Título</label>
+        <input class="form-control" type="text" v-model="nota.titulo">
+      </div>
+      <div class="form-group">
+        <label>Texto</label>
+        <textarea class="form-control" v-model="nota.texto"></textarea>
+      </div>
+      <button class="btn btn-primary" @click="agregarNota">Enviar</button>        
+    </div>
+    <div class="col-sm-12">
+      <div class="col-sm-4 nota" v-for="(nota, index) in notas">
+        <div class="card">
+          <div class="card-block">
+            <div class="card-title">{{nota.titulo}}</div>
+            <div class="card-subtitle mb-2 text-muted">{{nota.fecha}}</div>
+            <p class="card-text">{{nota.texto}}</p>
+          </div>
+          <button class="close" @click="eliminarNota(index)">&times;</button>          
+        </div>
+      </div>
+    </div>        
+  </div>  
 </template>
 
 <script>
@@ -24,37 +32,48 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      titulo: 'Gestión de notas',
+      nota:{
+        titulo:'',
+        texto:''
+      },
+      notas:[
+        {
+          titulo:'Ir al cine',
+          texto:'Examinar las películas de estreno',
+          fecha: new Date(Date.now()).toLocaleDateString()
+        }
+      ]
+    }
+  },
+  methods:{
+    agregarNota:function(){
+      let {texto, titulo} = this.nota;
+      this.notas.push({
+        texto,
+        titulo,
+        fecha: new Date(Date.now()).toLocaleString()
+      })
+    },
+    eliminarNota:function(index){
+      this.notas.splice(index, 1);
     }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+  .form{
+    text-align: left;
+  } 
+  .card{
+    text-align: left;
+    border:1px solid #2c3e50;
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+  } 
+  .nota{
+    padding: 5px;
+  }
 </style>

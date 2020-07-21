@@ -1,4 +1,4 @@
-# 03-generador-notas
+# 02-generador-notas
 
 > A Vue.js project
 
